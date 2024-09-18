@@ -1,0 +1,171 @@
+/* Admin.css */
+
+/* Estilos Gerais */
+.admin-container {
+    background-color: #121212;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cabeçalho */
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1c1c1c;
+}
+
+.admin-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.admin-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.admin-nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.admin-nav-link:hover {
+    color: #ff0000;
+}
+
+/* Seção de Gerenciamento de Produtos */
+.admin-products {
+    padding: 40px 20px;
+    flex: 1;
+}
+
+.section-title {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #cc0000;
+}
+
+.admin-product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.admin-product-card {
+    background-color: #222;
+    border: 1px solid #555;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    color: #fff;
+}
+
+.admin-product-image {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.admin-product-details {
+    margin-top: 15px;
+}
+
+.admin-product-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.admin-product-price {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.admin-product-actions {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.admin-action-button {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 8px 12px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.admin-action-button:hover {
+    background-color: #cc0000;
+}
+
+.delete-button {
+    background-color: #b30000;
+}
+
+.delete-button:hover {
+    background-color: #800000;
+}
+
+/* Rodapé */
+.home-footer {
+    background-color: #1c1c1c;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.social-icons {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.social-icon {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #ff0000;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .admin-product-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .admin-product-list {
+        grid-template-columns: 1fr;
+    }
+}

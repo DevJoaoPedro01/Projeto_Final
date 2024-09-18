@@ -1,0 +1,240 @@
+/* Estilos Gerais */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+}
+
+/* Cabeçalho */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1c1c1c;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-link:hover {
+    color: #ff0000;
+}
+
+/* Seção de Destaque */
+.highlight {
+    background-image: url('https://wallpapers.com/images/hd/watch-dogs-2-4k-gaming-8vdp65zcw7228d4l.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 140px 20px;
+    text-align: center;
+}
+
+.highlight-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.highlight h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.highlight p {
+    font-size: 20px;
+}
+
+/* Produtos em Destaque */
+.featured-products {
+    padding: 40px 20px;
+}
+
+.section-title {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.product-card {
+    background-color: #222;
+    border: 1px solid #555;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    color: #fff;
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.product-title {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.product-description {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #ccc;
+}
+
+.cta-button {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #cc0000;
+}
+
+/* Ofertas Especiais */
+.special-offers {
+    padding: 40px 20px;
+    background-color: #1c1c1c;
+}
+
+.offers-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.offer-item {
+    background-color: #222;
+    border: 1px solid #555;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    text-align: center;
+    color: #fff;
+}
+
+.offer-image {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.offer-details h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.offer-details p {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #ccc;
+}
+
+/* Novidades */
+.new-arrivals {
+    padding: 40px 20px;
+}
+
+.testimonials {
+    padding: 40px 20px;
+    background-color: #1c1c1c;
+}
+
+/* Depoimentos */
+.testimonial-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.testimonial-item {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    color: #ccc;
+}
+
+.testimonial-item span {
+    display: block;
+    margin-top: 10px;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Rodapé */
+.home-footer {
+    background-color: #1c1c1c;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.social-icons {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.social-icon {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #ff0000;
+}
+
+.ola{
+    margin: 0 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .product-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .offers-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-cards {
+        grid-template-columns: 1fr;
+    }
+}
