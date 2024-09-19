@@ -18,9 +18,9 @@ const Register = () => {
       });
       if (response.ok) {
         alert("Cadastro realizado com sucesso!");
-        setName('');
-        setEmail('');
-        setSenha('');
+        setName("");
+        setEmail("");
+        setSenha("");
       } else {
         const errorData = await response.json();
         alert(errorData.message || "Erro ao realizar o cadastro.");
@@ -72,7 +72,10 @@ const Register = () => {
         </form>
         <p className="toggle-text">
           Já tem uma conta?{" "}
-          <span onClick={() => window.location.href = '/login'} className="toggle-link">
+          <span
+            onClick={() => (window.location.href = "/login")}
+            className="toggle-link"
+          >
             Faça Login
           </span>
         </p>

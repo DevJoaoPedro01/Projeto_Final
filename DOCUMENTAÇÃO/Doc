@@ -1,0 +1,43 @@
+Introdução
+Nome do Projeto: Plataforma E-commerce de jogos para video games.
+Objetivo: Desenvolver uma plataforma que ofereça jogos para diferentes tipos de consoles, com preços acessíveis e competitivos
+Tecnologias Utilizadas: Javascript, node.js, react, npm , axios, mysql e github.
+
+Requisitos
+Funcionais: O sistema permite que administradores possam criar, ler, atualizar e deletar produtos.
+O sistema permite que o usuário adicione e remova itens de um carrinho de compras.
+O sistema permite que novos usuários se registrem fornecendo nome, e-mail e senha.
+O sistema permite que os usuários escrevam e publiquem avaliações de produtos.
+
+Não Funcionais:Todas as senhas são armazenadas usando criptografia forte, como o algoritmo bcrypt.
+O sistema escala até 10 vezes mais usuários sem perder desempenho.
+O sistema é intuitivo e de fácil utilização, permitindo que novos usuários se adaptem rapidamente.
+O sistema tem um tempo de atividade (uptime) de 99,9% durante o ano.
+
+Estrutura
+-Backend
+-Frontend
+-Documentação
+
+Instalação e Configuração
+Backend: Instruções para configurar o servidor e o banco de dados.
+Configuração do Banco de Dados: Como criar o banco, rodar migrations/seeds, e configurar as credenciais.
+Iniciando o Servidor: Comando para iniciar o backend (ex.: npm run dev).
+Frontend: Como rodar a aplicação frontend.
+Instalação e Execução: Comando para rodar o frontend (ex.: npm start).
+Configuração do Frontend: Informar onde estão os arquivos de configuração, se necessário.
+
+Funcionalidades
+Visão Geral: Breve explicação das funcionalidades principais, como cadastro de usuários, login, CRUD de produtos, etc.
+Rotas (Endpoints): Lista de rotas do backend com seus métodos (GET, POST, PUT, DELETE) e exemplos de requisições/respostas. Exemplo:
+POST /login: Realiza login de usuário.
+GET /products: Retorna a lista de produtos.
+Funcionalidades do Frontend: Explicar as páginas e componentes principais, descrevendo como interagem com o backend.
+
+Futuras Implementações
+
+- Implementar um sistema que recomenda produtos com base no histórico de navegação ou compras anteriores dos usuários.
+- Oferecer aos usuários a capacidade de personalizar suas contas, como foto de perfil, preferências de navegação ou categorias de produtos favoritas.
+- Criar um sistema de recompensas onde os usuários ganham pontos por compras ou interações, que podem ser trocados por descontos ou brindes.
+- Permitir que os usuários deixem avaliações e comentários sobre os produtos, com uma classificação por estrelas e a opção de adicionar imagens de suas compras.
+- Permitir que os usuários se cadastrem e façam login usando suas contas de redes sociais, como Google, Facebook ou Twitter, facilitando o processo de autenticação.

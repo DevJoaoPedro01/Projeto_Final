@@ -1,4 +1,3 @@
-// Admin.js
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
@@ -10,7 +9,7 @@ const Admin = () => {
   useEffect(() => {
     const produtos = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/products"); // Ajuste a URL conforme sua API
+        const response = await axios.get("http://localhost:5000/products");
         setProducts(response.data);
       } catch (error) {
         console.error("Erro ao buscar produtos:", error);
